@@ -1,0 +1,349 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Ibarra Real Nova", "Arial", sans-serif;
+  font-family: "Public Sans", "Arial", sans-serif;
+  background-color: #F2F2F2;
+}
+
+.container {
+  max-width: 1174px;
+  width: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+@import url("http://fonts.googleapis.com/css?family=Montserrat:400,700");
+
+
+::-moz-selection {
+    background: #fff;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.centered {
+	text-align: center
+}
+
+.mt {
+	margin-top: 80px;
+}
+
+.mb {
+	margin-bottom: 80px;
+}
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+    color: #4a4a4a;
+}
+
+.navbar {
+	transition: all ease 0.3s;
+}
+
+
+
+.navbar-brand {
+	font-weight: 700;
+}
+
+.navbar-default .navbar-brand {
+	color: #67D4F0;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #67D4F0;
+	background-color: transparent;
+	border-bottom: 2px solid #67D4F0
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #67D4F0;
+}
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+	background: #282c34;
+	margin-top: -70px;
+	padding-top: 165px;
+	text-align:center;
+	background-attachment: relative;
+	background-position:  0 -408px;
+	min-height: 650px;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.on {
+	transition: all ease 0.3s;
+	background-color: #191919 !important;
+	padding: 5px 0 !important;
+}
+
+#headerwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 50px;
+	font-weight: bold;
+	width: 600px;
+	text-align:center
+}
+
+.title-wrap {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center
+}
+
+.folio-card {
+	/* height: 360px; */
+	/* width: 150px; */
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.folio-card:hover .folio-img   {
+	transform: scale(1.2);
+}
+
+.folio-img {
+	border-radius: 5px;
+}
+
+#headerwrap h4 {
+	font-weight: 400;
+	color: #ffffff;
+	margin-top: 30px;
+
+}
+
+#social {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #f2f2f2;
+}
+
+#social i {
+	font-size: 40px;
+	color: #4a4a4a;
+	transition: all ease 0.3s;
+}
+
+#social img:hover {
+	color: #67D4F0
+}
+
+#footerwrap {
+	padding-top: 70px;
+	padding-bottom: 50px;
+	background-color: #191919;
+}
+
+#footerwrap p {
+	color: #f2f2f2;
+	margin-left: 10px;
+}
+
+.sm {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+#workwrap {
+	background: url(../img/work.jpg) no-repeat center top;
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#workwrap h1 {
+	color:#ffffff;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	letter-spacing: 4px;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+#workwrap h4 {
+	font-weight: 400;
+	color: #ffffff
+}
+
+#aboutwrap {
+	background:linear-gradient(180deg, rgba(0,0,0,0.9391106784510679) 0%, rgba(0,0,0,0.49653364763874297) 48%), url(../img/foggy-forest-01.jpg);
+	margin-top: -70px;
+	padding-top: 250px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 550px;
+	width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.about-me {
+	font-size: 24px;
+	margin-top: 25px;
+}
+
+
+/* Gallery */
+.gall {
+	transition: all ease 0.3s;
+}
+
+.gallery {
+	transition: all ease 0.5s;
+	margin-top: 30px;
+}
+
+.gallery img:hover {
+	opacity: 0.4;
+}
+
+.user-logo {
+  border-radius: 50%;
+	max-width: 100px;
+	max-height: 100px;
+}
+
+.row-title {
+	text-align: center;
+}
+
+.row-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+
+	#headerwrap h1 {
+		font-size: 50px;
+	}
+
+	.row-list {
+		flex-direction: row;
+	}
+
+
+}
