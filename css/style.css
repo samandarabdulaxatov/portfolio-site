@@ -138,25 +138,14 @@ h1, h2, h3, h4, h5, h6 {
    Wrap Sections
    ========================================================================== */
 
-#headerwrap {
+.header {
 	background: #282c34;
 	margin-top: -70px;
 	padding-top: 165px;
-	text-align:center;
-	background-attachment: relative;
+	padding-bottom: 80px;
+	text-align: center;
 	background-position:  0 -408px;
-	min-height: 650px;
-	width: 100%;
 
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .on {
@@ -165,14 +154,13 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 5px 0 !important;
 }
 
-#headerwrap h1 {
-	color:#ffffff;
+.header h1 {
+	color:#fff;
 	padding-top: 10px;
 	padding-bottom: 20px;
 	letter-spacing: 4px;
 	font-size: 50px;
 	font-weight: bold;
-	width: 600px;
 	text-align:center
 }
 
@@ -190,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 5px;
 }
 
-.folio-card:hover .folio-img   {
+.item:hover .folio-img   {
 	transform: scale(1.2);
 }
 
@@ -198,9 +186,9 @@ h1, h2, h3, h4, h5, h6 {
 	border-radius: 5px;
 }
 
-#headerwrap h4 {
+.header h4 {
 	font-weight: 400;
-	color: #ffffff;
+	color: #fff;
 	margin-top: 30px;
 
 }
@@ -322,27 +310,57 @@ h1, h2, h3, h4, h5, h6 {
 
 .row-title {
 	text-align: center;
+	margin-bottom: 40px;
 }
 
-.row-list {
+.list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	display: flex;
-	flex-direction: column;
+}
 
+.item {
+	max-width: 350px;
+}
+
+.item:not(:last-child) {
+	margin-bottom: 40px;
 }
 
 
 @media only screen and (min-width: 768px) {
 
+	.header {
 
-	#headerwrap h1 {
-		font-size: 50px;
 	}
 
-	.row-list {
-		flex-direction: row;
+	.header h1 {
+		font-size: 120px;
+		padding-top: 50px;
+		margin: 0;
+	}
+
+	.row-title {
+		margin-bottom: 40px;
+	}
+
+	.list {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.item {
+		margin-bottom: 40px;
+	}
+
+	.item:nth-child(2) {
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+
+	.item:nth-child(5) {
+		margin-right: 30px;
+		margin-left: 30px;
 	}
 
 
