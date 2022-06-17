@@ -191,7 +191,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	color: #fff;
 	margin-top: 30px;
-
 }
 
 #social {
@@ -207,7 +206,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #social img:hover {
-	color: #67D4F0
+	opacity: 0.6;
 }
 
 #footerwrap {
@@ -331,13 +330,25 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (min-width: 768px) {
 
 	.header {
-
+		background: #282c34;
+		margin-top: -70px;
+		padding-top: 165px;
+		padding-bottom: 80px;
+		text-align: center;
+		background-position:  0 -408px;
 	}
 
 	.header h1 {
-		font-size: 120px;
+		font-size: 110px;
 		padding-top: 50px;
 		margin: 0;
+	}
+
+	.header h4 {
+		font-size: 17px;
+		font-weight: 400;
+		color: #fff;
+		margin-top: 30px;
 	}
 
 	.row-title {
